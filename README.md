@@ -14,6 +14,21 @@ U-Net model training has been started. To continue the U-Net training, one shoul
 For UWaterloo students: once the Client is downloaded, you can connect to the VPN using your UWaterloo credentials and two-factor authentication:
 - From _Start_, open _Remote Desktop_.
 - Under "Computer", type _windows.student.math.uwaterloo.ca_. Click "Connect". If a window pops up saying "Do you trust this connection?" click "Connect" again.
-- Click "Use another account" and enter _nexus\youruserid_ (replace _youruserid_ with your UWaterloo user ID) and your password. You should now be able to access the server.
+- Click "Use another account" and enter _nexus\youruserid_ (replace _youruserid_ with your UWaterloo user ID) and your password. Click "OK". You should now be able to access the server.
 
 These instructions can also be found at: https://uwaterloo.ca/math-faculty-computing-facility/accessing-windows-student-server.
+
+**Training the U-Net Model**
+
+Your workstation within the server comes with the Spyder Python IDE. However, it does not come with all of the necessary Python libraries to train the U-Net model.
+
+It is beneficial to create your own environment for organizational purposes:
+- From _Start_, launch _Anaconda Navigator_. In the _Environments_ tab, click _Create_.
+
+In your new environment, you will need to install the missing libraries for U-Net model training. From _Anaconda Navigator_:
+- Launch _CMD.exe Prompt_.
+
+Type in each of the following commands (if there is a prompt that says "Proceed?" choose "y" for "yes"):
+- _conda install tensorflow_ (should install Tensorflow version >= 2.0.0)
+- _conda install matplotlib_
+- _conda install scikit-image_
