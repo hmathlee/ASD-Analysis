@@ -9,4 +9,8 @@ The analysis consists of two parts:
 **U-Net**
 
 U-Net model training has been started. To continue the U-Net training, one should use the University of Waterloo MFCF student servers. Below are instructions to do so for Windows users:
-- From _Start_, use 
+- To begin, you'll need a VPN. If you are a UWaterloo student, see https://uwaterloo.atlassian.net/wiki/spaces/ISTKB/pages/262012949/How+to+install+and+connect+to+the+VPN+-+Windows+OS for instructions on how to download the Cisco AnyConnect Secure Mobility Client on Windows. Otherwise, you may need to see alternative options.
+- For UWaterloo students: once the Client is downloaded, you can connect to the VPN using your UWaterloo credentials and two-factor authentication.
+- From _Start_, open _Remote Desktop_.
+- Under "Computer:" type in _windows.student.math.uwaterloo.ca_. Click "Connect". If a window pops up saying "Do you trust this connection?" click "Connect" again.
+- Click "Use another account" and enter _nexus\youruserid_ (replace _youruserid_ with your UWaterloo user ID) and your password. You should now be able to access the server.
