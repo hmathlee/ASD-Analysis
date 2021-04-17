@@ -6,6 +6,8 @@ The analysis consists of two parts:
 - Image segmentation with U-Net model
 - Network analysis for ASD and TD eye-gaze
 
+# How to Use this Repository:
+
 ## U-Net
 
 U-Net model training has been started. To continue the U-Net training, one should use the University of Waterloo MFCF student servers. Below are instructions to do so for Windows users:
@@ -16,12 +18,12 @@ For UWaterloo students: once the Client is downloaded, you can connect to the VP
 - Under "Computer", type _windows.student.math.uwaterloo.ca_. Click "Connect". If a window pops up saying "Do you trust this connection?" click "Connect" again.
 - Click "Use another account" and enter _nexus\youruserid_ (replace _youruserid_ with your UWaterloo user ID) and your password. Click "OK". You should now be able to access the server.
 
+These instructions can also be found at: https://uwaterloo.ca/math-faculty-computing-facility/accessing-windows-student-server.
+
 **Note:** You will also need to import the PASCAL VOC 2012 image dataset into your workstation on the server:
 - On _Remote Desktop_, when you have typed in the server name under "Computer", go to _Show Options_.
 - Under the _Local Resources_ tab, under _Local drives and resources_, click "More".
 - A new window will pop up. Under the _Drives_ section, check the box next to the drive from which you want to import your resources into your server workstation. Click "OK".
-
-These instructions can also be found at: https://uwaterloo.ca/math-faculty-computing-facility/accessing-windows-student-server.
 
 ## Training the U-Net Model
 
@@ -37,3 +39,8 @@ Type in each of the following commands (if there is a prompt that says "Proceed?
 - _conda install tensorflow_ (should install Tensorflow version >= 2.0.0)
 - _conda install matplotlib_
 - _conda install scikit-image_
+
+Once these libaries have been installed, open Spyder in your new environment. You can launch Spyder from _Anaconda Navigator_ (ensure that the environment under "Applications on" is set to your environment and not "base"). Alternatively, you might be able to type "Spyder" in _Start_, and "Spyder (yourEnvironmentName)" will pop up. Click on this option to open Spyder in your environment.
+
+Put the code in "model.py" in this repository into your Spyder script. Remember to alter the paths to your PASCAL image dataset as necessary (see instructions on how to bring the dataset into your _Remote Desktop_ workstation above, if not done already).
+
