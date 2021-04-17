@@ -42,7 +42,7 @@ Type in each of the following commands (if there is a prompt that says "Proceed?
 
 Once these libaries have been installed, open Spyder in your new environment. You can launch Spyder from _Anaconda Navigator_ (ensure that the environment under "Applications on" is set to your environment and not "base (root)"). Alternatively, you might be able to type "Spyder" in _Start_, and "Spyder (yourEnvironmentName)" will pop up. Click on this option to open Spyder in your environment.
 
-Put the code in "model.py" from this repository into your Spyder script. Remember to alter the paths to your PASCAL image dataset as necessary (see instructions on how to bring the dataset into your _Remote Desktop_ workstation above, if not done already). When you click "Run", model training should begin.
+Put the code in "unet.py" from this repository into your Spyder script. Remember to alter the paths to your PASCAL image dataset as necessary (see instructions on how to bring the dataset into your _Remote Desktop_ workstation above, if not done already). When you click "Run", model training should begin.
 
 ## Network Analysis
 
