@@ -13,7 +13,7 @@ U-Net model training has been started. To continue the U-Net training, one shoul
 
 For UWaterloo students: once the Client is downloaded, you can connect to the VPN using your UWaterloo credentials and two-factor authentication:
 - From _Start_, open _Remote Desktop_.
-- Under "Computer:" type in _windows.student.math.uwaterloo.ca_. Click "Connect". If a window pops up saying "Do you trust this connection?" click "Connect" again.
+- Under "Computer", type _windows.student.math.uwaterloo.ca_. Click "Connect". If a window pops up saying "Do you trust this connection?" click "Connect" again.
 - Click "Use another account" and enter _nexus\youruserid_ (replace _youruserid_ with your UWaterloo user ID) and your password. You should now be able to access the server.
 
 These instructions can also be found at: https://uwaterloo.ca/math-faculty-computing-facility/accessing-windows-student-server.
