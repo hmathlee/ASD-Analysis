@@ -7,3 +7,6 @@ The analysis consists of two parts:
 - Network analysis for ASD and TD eye-gaze
 
 **U-Net**
+
+U-Net model training has been started. To continue the U-Net training, one should use the University of Waterloo MFCF student servers. Below are instructions to do so for Windows users:
+- From _Start_, use 
