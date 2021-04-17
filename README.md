@@ -10,7 +10,7 @@ The analysis consists of two parts:
 
 ## U-Net
 
-U-Net model training has been started. To continue the U-Net training, one should use the University of Waterloo MFCF student servers. Below are instructions to do so for Windows users:
+To train the U-Net model, one should use the University of Waterloo MFCF student servers. Below are instructions to do so for Windows users:
 - To begin, you'll need a VPN. If you are a UWaterloo student, see https://uwaterloo.atlassian.net/wiki/spaces/ISTKB/pages/262012949/How+to+install+and+connect+to+the+VPN+-+Windows+OS for instructions on how to download the Cisco AnyConnect Secure Mobility Client on Windows. Otherwise, you may need to see alternative options.
 
 For UWaterloo students: once the Client is downloaded, you can connect to the VPN using your UWaterloo credentials and two-factor authentication:
@@ -40,7 +40,16 @@ Type in each of the following commands (if there is a prompt that says "Proceed?
 - _conda install matplotlib_
 - _conda install scikit-image_
 
-Once these libaries have been installed, open Spyder in your new environment. You can launch Spyder from _Anaconda Navigator_ (ensure that the environment under "Applications on" is set to your environment and not "base"). Alternatively, you might be able to type "Spyder" in _Start_, and "Spyder (yourEnvironmentName)" will pop up. Click on this option to open Spyder in your environment.
+Once these libaries have been installed, open Spyder in your new environment. You can launch Spyder from _Anaconda Navigator_ (ensure that the environment under "Applications on" is set to your environment and not "base (root)"). Alternatively, you might be able to type "Spyder" in _Start_, and "Spyder (yourEnvironmentName)" will pop up. Click on this option to open Spyder in your environment.
 
-Put the code in "model.py" in this repository into your Spyder script. Remember to alter the paths to your PASCAL image dataset as necessary (see instructions on how to bring the dataset into your _Remote Desktop_ workstation above, if not done already).
+Put the code in "model.py" from this repository into your Spyder script. Remember to alter the paths to your PASCAL image dataset as necessary (see instructions on how to bring the dataset into your _Remote Desktop_ workstation above, if not done already). When you click "Run", model training should begin.
 
+## Network Analysis
+
+Three of the relevant centrality measures (degree, betweenness, closeness) have already been implemented under "centrality.py". Eigenvector centrality still needs to be coded.
+
+## To Do:
+
+- Finish U-Net model training.
+- Write the code for eigenvector centrality.
+- Images from the ASD dataset will have to be resized into 512 by 512. This is the image size that the U-Net model accepts. This resizing can likely be done with Python imaging libraries with _resize()_ functions.
