@@ -1,3 +1,5 @@
+# Import necessary libraries. Ensure that they are installed into your environment.
+
 import tensorflow as tf
 import pandas as pd
 import numpy as np
