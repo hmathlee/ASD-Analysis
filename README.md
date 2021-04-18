@@ -3,7 +3,7 @@
 This code serves to analyze eye-gaze in individuals with autism spectrum disorder (ASD) versus typical development (TD) individuals.
 
 The analysis consists of two parts:
-- Image segmentation with U-Net model
+- Image segmentation with U-Net model (training using the PASCAL VOC 2012 image dataset)
 - Network analysis for ASD and TD eye-gaze
 
 # How to Use this Repository:
