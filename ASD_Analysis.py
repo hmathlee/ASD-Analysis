@@ -13,6 +13,22 @@ from sklearn.model_selection import KFold
 ##   Component Analysis pca
 
 def pcaCoord(pca, b):
+    '''
+    Expresses a vector, b, in terms of the component vectors obtained Principal Component Analysis (PCA) on a dataset (i.e. gives coordinates)
+    
+    pcaCoord(pca, b) takes in a PCA, pca, and a vector, b (in the form of a numpy array), and computes the coordinates of b with respect to the set of pca component vectors
+    Returns the coordinate vector of b with respect to set of pca component vectors
+    
+    Parameters:
+      pca: PCA
+      b: numpy array
+    
+    Returns:
+    numpy array
+      coordinate vector of b with respect to pca basis
+    
+    '''
+    
     c = np.zeros(b.size)
     j = 0
     for p in pca.components_:
@@ -22,7 +38,7 @@ def pcaCoord(pca, b):
 
 ## Read in the dataset
 
-df = pd.read_csv(r'C:\Users\hmlee\Documents\Autism_Data.csv')
+df = pd.read_csv(r'PATH\TO\ASD\DATA\CSV\FILE)
 
 ## Encode for any features taking non-numeric values ##
 
