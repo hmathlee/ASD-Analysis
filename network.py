@@ -1,8 +1,8 @@
-## Network analysis. Use graph theory to model each test subject's eye gaze for a single image, where vertices represent objects present in image, and edges represent
-## eye-gaze transitions (saccades) between two distinct objects.
+## Network analysis. Use graph theory to model each test subject's eye gaze for a single image, where vertices represent objects present in image, and edges 
+## represent eye-gaze transitions (saccades) between two distinct objects.
 
-## TO DO: Code up the eigenvector centrality measure. The centrality measures serve as a method to quantify object significance in images, which corresponds to viewing
-## patterns and preferences for individuals with and without ASD diagnoses.
+## TO DO: Code up the eigenvector centrality measure. The centrality measures serve as a method to quantify object significance in images, which corresponds to 
+## viewing patterns and preferences for individuals with and without ASD diagnoses.
 
 from skimage.io import imread, imshow
 from random import randint
